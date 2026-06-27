@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RecruGI Pvt Ltd — Next-generation AI-powered recruitment consultancy in Vijayawada. IT Services, Career Guidance, HR Training & Placement Assistance.">
+    <meta name="keywords" content="RecruGI, recruitment consultancy, Vijayawada, AI recruitment, IT jobs, HR training, placement assistance, career counselling, resume writing, bench sales, US IT recruitment">
+    <meta name="author" content="RecruGI Pvt Ltd">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="RecruGI Pvt Ltd — Empowering Talent. Enabling Growth.">
+    <meta property="og:description" content="AI-powered recruitment consultancy in Vijayawada offering IT services, career guidance, and placement assistance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://recrugi.com">
+    <meta property="og:image" content="https://recrugi.com/og-image.jpg">
+
+    <title>RecruGI Pvt Ltd — AI-Powered Recruitment Consultancy | Vijayawada</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="recrugi.css">
+</head>
+<body>
+
+    <!-- ========== LOADING SCREEN ========== -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">R</div>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+            <p>Loading experience...</p>
+        </div>
+    </div>
+
+    <!-- ========== SCROLL PROGRESS BAR ========== -->
+    <div id="scrollProgress" class="scroll-progress"></div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <header id="navbar" class="navbar">
+        <div class="container nav-container">
+            <!-- Company Logo -->
+            <a href="#home" class="logo">
+                <span class="logo-icon">R</span>
+                <span class="logo-text">Recru<span class="logo-highlight">GI</span></span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#why-us" class="nav-link">Why Choose Us</a></li>
+                    <li><a href="#training" class="nav-link">Training</a></li>
+                    <li><a href="#jobs" class="nav-link">Jobs</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Nav Actions -->
+            <div class="nav-actions">
+                <!-- Dark Mode Toggle -->
+                <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle dark mode">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun"></i>
+                </button>
+                <!-- Mobile Menu Toggle -->
+                <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== HERO SECTION ========== -->
+        <section id="home" class="hero">
+            <!-- Animated Background Elements -->
+            <div class="hero-bg">
+                <div class="hero-orb hero-orb-1"></div>
+                <div class="hero-orb hero-orb-2"></div>
+                <div class="hero-orb hero-orb-3"></div>
+                <div class="hero-grid"></div>
+            </div>
+
+            <div class="container hero-container">
+                <!-- Left Content -->
+                <div class="hero-content reveal-left">
+                    <div class="hero-badge">🚀 AI-Powered Recruitment</div>
+                    <h1 class="hero-title">
+                        Empowering Talent.<br>
+                        <span class="gradient-text">Enabling Growth.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        We redefine recruitment through <span class="typing-wrapper"><span id="typingText"></span><span class="typing-cursor">|</span></span> and personalized hiring solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary ripple">
+                            Get Started <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline ripple">
+                            Contact Us <i data-lucide="phone"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">50+</span>
+                            <span class="hero-stat-label">Placements</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">11-50</span>
+                            <span class="hero-stat-label">Team Size</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">2025</span>
+                            <span class="hero-stat-label">Founded</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Illustration -->
+                <div class="hero-illustration reveal-right">
+                    <div class="hero-visual">
+                        <div class="hero-circle-main"></div>
+                        <div class="hero-circle-outer"></div>
+                        <!-- Floating Cards -->
+                        <div class="float-card float-card-1 glass">
+                            <i data-lucide="brain"></i>
+                            <span>AI Hiring</span>
+                        </div>
+                        <div class="float-card float-card-2 glass">
+                            <i data-lucide="map"></i>
+                            <span>Talent Mapping</span>
+                        </div>
+                        <div class="float-card float-card-3 glass">
+                            <i data-lucide="user-check"></i>
+                            <span>Recruitment</span>
+                        </div>
+                        <div class="float-card float-card-4 glass">
+                            <i data-lucide="trending-up"></i>
+                            <span>Career Growth</span>
+                        </div>
+                        <!-- Decorative dots -->
+                        <div class="hero-dots hero-dots-1"></div>
+                        <div class="hero-dots hero-dots-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">Who We <span class="gradient-text">Are</span></h2>
+                    <p class="section-desc">A next-generation recruitment consultancy transforming how companies hire and talent grows.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content reveal-left">
+                        <p class="about-text">
+                            <strong>RecruGI Pvt Ltd</strong> is a next-generation recruitment consultancy founded in 2025 in Vijayawada.
+                        </p>
+                        <p class="about-text">
+                            We help businesses hire smarter while empowering job seekers with career guidance, interview preparation, resume building, recruitment training, and AI-driven hiring strategies.
+                        </p>
+                        <p class="about-text">
+                            Our mission is connecting talented people with growing companies through AI-powered recruitment and personalized hiring solutions. We put people before processes and partnership before placement.
+                        </p>
+                        <a href="#services" class="btn btn-primary ripple" style="margin-top:1.5rem;">Explore Services <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="about-highlights reveal-right">
+                        <div class="highlight-card glass">
+                            <div class="highlight-icon"><i data-lucide="brain"></i></div>
+                            <h3>AI Recruitment</h3>
+                            <p>Leveraging artificial intelligence to match the right talent with the right opportunity faster than ever.</p>
+                        </div>
+                        <div class="highlight-card glass">
+                            <div class="highlight-icon"><i data-lucide="radar"></i></div>
+                            <h3>Talent Intelligence</h3>
+                            <p>Data-driven insights to identify, engage, and nurture top-tier talent across industries.</p>
+                        </div>
+                        <div class="highlight-card glass">
+                            <div class="highlight-icon"><i data-lucide="rocket"></i></div>
+                            <h3>Career Development</h3>
+                            <p>Comprehensive training, mentoring, and guidance to accelerate your professional journey.</p>
+                        </div>
+                        <div class="highlight-card glass">
+                            <div class="highlight-icon"><i data-lucide="bar-chart-3"></i></div>
+                            <h3>Business Growth</h3>
+                            <p>Strategic hiring solutions that drive organizational success and scalable growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SERVICES SECTION ========== -->
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">What We Do</span>
+                    <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                    <p class="section-desc">Comprehensive recruitment and career solutions powered by technology and human expertise.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="users"></i></div>
+                        <h3>End-to-End Recruitment</h3>
+                        <p>Complete recruitment lifecycle management from sourcing to onboarding.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="monitor"></i></div>
+                        <h3>IT Recruitment</h3>
+                        <p>Specialized hiring for technology roles across all experience levels.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="map-pin"></i></div>
+                        <h3>Domestic Recruitment</h3>
+                        <p>Local and national hiring solutions tailored to Indian markets.</p>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="message-square"></i></div>
+                        <h3>Interview Preparation</h3>
+                        <p>Mock interviews and coaching to boost your confidence and performance.</p>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="file-text"></i></div>
+                        <h3>Resume Writing</h3>
+                        <p>Professional resumes crafted to highlight your strengths and achievements.</p>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="search"></i></div>
+                        <h3>Resume Review</h3>
+                        <p>Expert analysis and actionable feedback to improve your existing resume.</p>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="compass"></i></div>
+                        <h3>Career Counselling</h3>
+                        <p>Personalized guidance to help you choose and navigate your career path.</p>
+                    </div>
+                    <!-- Service 8 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="graduation-cap"></i></div>
+                        <h3>HR Recruitment Training</h3>
+                        <p>Industry-ready training programs for aspiring HR and recruitment professionals.</p>
+                    </div>
+                    <!-- Service 9 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="code"></i></div>
+                        <h3>IT Consulting</h3>
+                        <p>Strategic technology consulting to optimize your IT hiring and operations.</p>
+                    </div>
+                    <!-- Service 10 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="layout"></i></div>
+                        <h3>Web Design</h3>
+                        <p>Modern, responsive websites that elevate your brand's digital presence.</p>
+                    </div>
+                    <!-- Service 11 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="book-open"></i></div>
+                        <h3>Training Programs</h3>
+                        <p>Structured programs in recruitment, bench sales, and emerging technologies.</p>
+                    </div>
+                    <!-- Service 12 -->
+                    <div class="service-card reveal-up">
+                        <div class="service-icon"><i data-lucide="briefcase"></i></div>
+                        <h3>Placement Assistance</h3>
+                        <p>Dedicated support to connect trained candidates with top employers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== WHY CHOOSE US SECTION ========== -->
+        <section id="why-us" class="section why-us">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Our Edge</span>
+                    <h2 class="section-title">Why Choose <span class="gradient-text">RecruGI</span></h2>
+                    <p class="section-desc">What sets us apart in the world of recruitment consulting.</p>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="features-grid">
+                    <div class="feature-card glass reveal-up">
+                        <div class="feature-icon"><i data-lucide="brain"></i></div>
+                        <h3>AI Powered Hiring</h3>
+                        <p>Smart algorithms that match candidates to roles with precision and speed.</p>
+                    </div>
+                    <div class="feature-card glass reveal-up">
+                        <div class="feature-icon"><i data-lucide="award"></i></div>
+                        <h3>Expert Recruiters</h3>
+                        <p>Seasoned professionals with deep industry knowledge and networks.</p>
+                    </div>
+                    <div class="feature-card glass reveal-up">
+                        <div class="feature-icon"><i data-lucide="zap"></i></div>
+                        <h3>Fast Hiring</h3>
+                        <p>Reduced time-to-hire with streamlined processes and AI efficiency.</p>
+                    </div>
+                    <div class="feature-card glass reveal-up">
+                        <div class="feature-icon"><i data-lucide="handshake"></i></div>
+                        <h3>Trusted Partnership</h3>
+                        <p>Long-term relationships built on transparency, integrity, and results.</p>
+                    </div>
+                </div>
+
+                <!-- Animated Counters -->
+                <div class="counters-grid reveal-up">
+                    <div class="counter-card">
+                        <span class="counter-number" data-target="50">0</span><span class="counter-suffix">+</span>
+                        <span class="counter-label">Successful Placements</span>
+                    </div>
+                    <div class="counter-card">
+                        <span class="counter-number" data-target="45">0</span><span class="counter-suffix"> Days</span>
+                        <span class="counter-label">Job Ready Program</span>
+                    </div>
+                    <div class="counter-card">
+                        <span class="counter-number" data-target="100">0</span><span class="counter-suffix">%</span>
+                        <span class="counter-label">Online Training</span>
+                    </div>
+                    <div class="counter-card">
+                        <span class="counter-number" data-target="50">0</span><span class="counter-suffix">+</span>
+                        <span class="counter-label">Team Members</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TRAINING PROGRAMS SECTION ========== -->
+        <section id="training" class="section training">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Learn & Grow</span>
+                    <h2 class="section-title">Training <span class="gradient-text">Programs</span></h2>
+                    <p class="section-desc">Industry-oriented programs designed to make you job-ready from day one.</p>
+                </div>
+
+                <div class="training-grid">
+                    <div class="training-card reveal-up">
+                        <div class="training-icon"><i data-lucide="users"></i></div>
+                        <h3>HR Recruitment</h3>
+                        <p>Master end-to-end HR recruitment processes, from job analysis to candidate onboarding.</p>
+                        <a href="#contact" class="training-link ripple">Learn More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="training-card reveal-up">
+                        <div class="training-icon"><i data-lucide="globe"></i></div>
+                        <h3>US IT Recruitment</h3>
+                        <p>Learn US staffing lifecycle including tax terms, visa types, and client management.</p>
+                        <a href="#contact" class="training-link ripple">Learn More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="training-card reveal-up">
+                        <div class="training-icon"><i data-lucide="phone"></i></div>
+                        <h3>Bench Sales</h3>
+                        <p>Effective bench marketing techniques to place consultants on projects quickly.</p>
+                        <a href="#contact" class="training-link ripple">Learn More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="training-card reveal-up">
+                        <div class="training-icon"><i data-lucide="filter"></i></div>
+                        <h3>Boolean Search</h3>
+                        <p>Advanced search techniques to find hidden talent across job boards and LinkedIn.</p>
+                        <a href="#contact" class="training-link ripple">Learn More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="training-card reveal-up">
+                        <div class="training-icon"><i data-lucide="sparkles"></i></div>
+                        <h3>Prompt Engineering</h3>
+                        <p>Learn to craft effective AI prompts for recruitment automation and productivity.</p>
+                        <a href="#contact" class="training-link ripple">Learn More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="training-card reveal-up">
+                        <div class="training-icon"><i data-lucide="linkedin"></i></div>
+                        <h3>LinkedIn Sourcing</h3>
+                        <p>Leverage LinkedIn's full potential for passive candidate sourcing and engagement.</p>
+                        <a href="#contact" class="training-link ripple">Learn More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="training-card reveal-up">
+                        <div class="training-icon"><i data-lucide="mic"></i></div>
+                        <h3>Interview Skills</h3>
+                        <p>Build confidence with mock interviews, behavioral coaching, and feedback sessions.</p>
+                        <a href="#contact" class="training-link ripple">Learn More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    <div class="training-card reveal-up">
+                        <div class="training-icon"><i data-lucide="file-check"></i></div>
+                        <h3>Resume Building</h3>
+                        <p>Create ATS-friendly, impactful resumes that get you noticed by recruiters.</p>
+                        <a href="#contact" class="training-link ripple">Learn More <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== HIRING PROCESS TIMELINE ========== -->
+        <section class="section timeline-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Our Process</span>
+                    <h2 class="section-title">Hiring <span class="gradient-text">Timeline</span></h2>
+                    <p class="section-desc">A structured, transparent process from application to placement.</p>
+                </div>
+
+                <div class="timeline reveal-up">
+                    <div class="timeline-track">
+                        <div class="timeline-progress" id="timelineProgress"></div>
+                    </div>
+                    <div class="timeline-step" data-step="1">
+                        <div class="timeline-dot"><span>1</span></div>
+                        <div class="timeline-card glass">
+                            <i data-lucide="file-search"></i>
+                            <h3>Resume Review</h3>
+                            <p>Thorough evaluation of your profile and alignment with role requirements.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step" data-step="2">
+                        <div class="timeline-dot"><span>2</span></div>
+                        <div class="timeline-card glass">
+                            <i data-lucide="scan-search"></i>
+                            <h3>Screening</h3>
+                            <p>Initial assessment through calls and skill-based evaluations.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step" data-step="3">
+                        <div class="timeline-dot"><span>3</span></div>
+                        <div class="timeline-card glass">
+                            <i data-lucide="message-circle"></i>
+                            <h3>Interview</h3>
+                            <p>Multiple rounds of interviews with technical and HR panels.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step" data-step="4">
+                        <div class="timeline-dot"><span>4</span></div>
+                        <div class="timeline-card glass">
+                            <i data-lucide="check-circle"></i>
+                            <h3>Selection</h3>
+                            <p>Final evaluation, offer discussion, and negotiation support.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step" data-step="5">
+                        <div class="timeline-dot"><span>5</span></div>
+                        <div class="timeline-card glass">
+                            <i data-lucide="party-popper"></i>
+                            <h3>Placement</h3>
+                            <p>Smooth onboarding assistance and post-placement follow-up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== LATEST OPPORTUNITIES SECTION ========== -->
+        <section id="jobs" class="section jobs">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Open Positions</span>
+                    <h2 class="section-title">Latest <span class="gradient-text">Opportunities</span></h2>
+                    <p class="section-desc">Explore current openings and take the next step in your career.</p>
+                </div>
+
+                <div class="jobs-grid">
+                    <div class="job-card reveal-up">
+                        <div class="job-header">
+                            <div class="job-icon"><i data-lucide="monitor"></i></div>
+                            <div>
+                                <h3>IT Recruiter</h3>
+                                <p class="job-company">RecruGI Pvt Ltd</p>
+                            </div>
+                        </div>
+                        <div class="job-tags">
+                            <span class="job-tag"><i data-lucide="briefcase"></i> 0–2 Years</span>
+                            <span class="job-tag"><i data-lucide="map-pin"></i> Vijayawada</span>
+                            <span class="job-tag"><i data-lucide="clock"></i> Full-Time</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm ripple">Apply Now <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="job-card reveal-up">
+                        <div class="job-header">
+                            <div class="job-icon"><i data-lucide="users"></i></div>
+                            <div>
+                                <h3>HR Recruiter</h3>
+                                <p class="job-company">RecruGI Pvt Ltd</p>
+                            </div>
+                        </div>
+                        <div class="job-tags">
+                            <span class="job-tag"><i data-lucide="briefcase"></i> 1–3 Years</span>
+                            <span class="job-tag"><i data-lucide="map-pin"></i> Vijayawada</span>
+                            <span class="job-tag"><i data-lucide="clock"></i> Full-Time</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm ripple">Apply Now <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="job-card reveal-up">
+                        <div class="job-header">
+                            <div class="job-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h3>Bench Sales Recruiter</h3>
+                                <p class="job-company">RecruGI Pvt Ltd</p>
+                            </div>
+                        </div>
+                        <div class="job-tags">
+                            <span class="job-tag"><i data-lucide="briefcase"></i> 1–4 Years</span>
+                            <span class="job-tag"><i data-lucide="map-pin"></i> Vijayawada</span>
+                            <span class="job-tag"><i data-lucide="clock"></i> Full-Time</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm ripple">Apply Now <i data-lucide="arrow-right"></i></a>
+                    </div>
+
+                    <div class="job-card reveal-up">
+                        <div class="job-header">
+                            <div class="job-icon"><i data-lucide="target"></i></div>
+                            <div>
+                                <h3>Talent Acquisition Executive</h3>
+                                <p class="job-company">RecruGI Pvt Ltd</p>
+                            </div>
+                        </div>
+                        <div class="job-tags">
+                            <span class="job-tag"><i data-lucide="briefcase"></i> 0–1 Year</span>
+                            <span class="job-tag"><i data-lucide="map-pin"></i> Vijayawada</span>
+                            <span class="job-tag"><i data-lucide="clock"></i> Full-Time</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-sm ripple">Apply Now <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS SECTION ========== -->
+        <section id="testimonials" class="section testimonials">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
+                    <p class="section-desc">Real stories from candidates and clients who trusted RecruGI.</p>
+                </div>
+
+                <div class="testimonial-slider reveal-up">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card glass">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"RecruGI transformed my career. The training program gave me the skills and confidence to land my dream role in IT recruitment. Highly recommended!"</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">PS</div>
+                                <div>
+                                    <strong>Priya Sharma</strong>
+                                    <span>IT Recruiter, Hyderabad</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card glass">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"As a fresher, I was lost. RecruGI's career counselling and interview prep changed everything. I got placed within 45 days of training!"</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">RK</div>
+                                <div>
+                                    <strong>Ravi Kumar</strong>
+                                    <span>HR Executive, Vijayawada</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card glass">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"We partnered with RecruGI for our hiring needs and they delivered exceptional candidates. Their AI-powered approach is truly next-level."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">AN</div>
+                                <div>
+                                    <strong>Anitha Nair</strong>
+                                    <span>HR Manager, TechCorp</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider Controls -->
+                    <div class="testimonial-controls">
+                        <button class="slider-btn" id="prevBtn" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+                        <div class="slider-dots" id="sliderDots"></div>
+                        <button class="slider-btn" id="nextBtn" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FAQ SECTION ========== -->
+        <section id="faq" class="section faq">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Got Questions?</span>
+                    <h2 class="section-title">Frequently <span class="gradient-text">Asked</span></h2>
+                    <p class="section-desc">Find answers to common questions about our programs and services.</p>
+                </div>
+
+                <div class="faq-list reveal-up">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Who can join the training programs?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Anyone with a passion for recruitment and HR can join — freshers, experienced professionals looking to switch careers, or those wanting to upskill in AI-powered hiring techniques.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do freshers apply for your training programs?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! Our programs are designed to take freshers from zero to job-ready. We provide foundational training, hands-on practice, and placement assistance.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you provide placement support after training?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, 100% placement assistance is provided. We connect you with our network of hiring partners and provide ongoing support until you secure a position.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is the training conducted online?</span>
+                            <i data-lucide="plus" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, all our training programs are conducted 100% online through live interactive sessions, ensuring you can learn from anywhere without compromising on quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+                    <p class="section-desc">Have a question or ready to start? We'd love to hear from you.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Company Details -->
+                    <div class="contact-info reveal-left">
+                        <div class="contact-info-card glass">
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <!-- Company Phone -->
+                                    <a href="tel:+919963018169">+91 9963018169</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <!-- Company Email -->
+                                    <a href="mailto:hrrecrugi@gmail.com">hrrecrugi@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <!-- Company Address -->
+                                    <p>Vijayawada, Andhra Pradesh, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon"><i data-lucide="clock"></i></div>
+                                <div>
+                                    <h4>Working Hours</h4>
+                                    <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="contact-socials">
+                            <span>Follow Us</span>
+                            <div class="social-links">
+                                <!-- Social Links -->
+                                <a href="#" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
+                                <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><i data-lucide="instagram"></i></a>
+                                <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"><i data-lucide="facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-wrapper reveal-right">
+                        <form id="contactForm" class="contact-form glass" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                                    <span class="form-error" id="emailError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" required>
+                                    <span class="form-error" id="phoneError"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="How can we help?">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us more about your requirements..." required></textarea>
+                                <span class="form-error" id="messageError"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full ripple">
+                                Send Message <i data-lucide="send"></i>
+                            </button>
+                            <div id="formSuccess" class="form-success" style="display:none;">
+                                <i data-lucide="check-circle"></i> Thank you! Your message has been sent successfully.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="map-wrapper reveal-up">
+                    <!-- Google Map: Replace src with your preferred embed URL -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122284.25735498068!2d80.41563519999999!3d16.5074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f17de1e742d7%3A0x2e2b7b3f7e6c4a0!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                        width="100%"
+                        height="400"
+                        style="border:0; border-radius:1rem;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="RecruGI Pvt Ltd Location - Vijayawada">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Footer About -->
+                <div class="footer-about">
+                    <a href="#home" class="logo footer-logo">
+                        <span class="logo-icon">R</span>
+                        <span class="logo-text">Recru<span class="logo-highlight">GI</span></span>
+                    </a>
+                    <p>Empowering Talent. Enabling Growth. — A next-generation AI-powered recruitment consultancy based in Vijayawada.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#jobs">Jobs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">IT Recruitment</a></li>
+                        <li><a href="#services">Resume Writing</a></li>
+                        <li><a href="#services">Career Counselling</a></li>
+                        <li><a href="#services">HR Training</a></li>
+                        <li><a href="#services">IT Consulting</a></li>
+                        <li><a href="#services">Placement Assistance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-item">
+                        <i data-lucide="phone"></i>
+                        <!-- Company Phone -->
+                        <a href="tel:+919963018169">+91 9963018169</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="mail"></i>
+                        <!-- Company Email -->
+                        <a href="mailto:hrrecrugi@gmail.com">hrrecrugi@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <!-- Company Address -->
+                        <span>Vijayawada, AP, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 RecruGI Pvt Ltd. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <!-- Social Links -->
+                    <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
+                    <a href="https://www.instagram.com/recrugi_pvt_ltd" aria-label="Instagram" target="_blank" rel="noopener"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><i data-lucide="facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+    <!-- WhatsApp Number: Update the number in the href below -->
+    <a href="https://wa.me/919963018169" target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- ========== FLOATING CALL BUTTON ========== -->
+    <!-- Company Phone: Update the number in the href below -->
+    <a href="tel:+919963018169" class="float-btn float-call" aria-label="Call us">
+        <i data-lucide="phone"></i>
+    </a>
+
+    <!-- ========== BACK TO TOP BUTTON ========== -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Main Script -->
+    <script src="recrugi.js"></script>
+</body>
+</html>
